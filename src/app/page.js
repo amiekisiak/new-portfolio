@@ -1,5 +1,10 @@
 import Head from 'next/head';
 import {BsFillMoonStarsFill} from 'react-icons/bs';
+import { AiFillLinkedin,AiFillGithub} from 'react-icons/ai';
+import Image from 'next/image';
+import ola from '../../public/picture1.svg';
+
+
 
 
 export default function Home() {
@@ -12,9 +17,9 @@ return(
 </Head>
 
 <main>
-<section className="  bg-slate-800 px-10">
+<section className=" bg-sky-700 px-10">
    <nav className="py-10 mb-12 flex justify-between">
-<h1 className="text xl">The Dev to die for</h1>
+<h1 className="text-xl font-syne">Aleksandra's Portfolio</h1>
 <ul className="flex items-center">
    <li>
       <BsFillMoonStarsFill className="cursor-pointer"></BsFillMoonStarsFill>
@@ -25,6 +30,35 @@ return(
       </li>
 </ul>
 </nav>
+<div className="text-center p-10 py-10">
+   <h2 className='text-5xl py-2 text-teal-100 font-medium'>Aleksandra Miekisiak</h2>
+   <h3 className='text-2xl py-2'>Developer and Designer.</h3>
+   <p className='text-md py-5 leading-8 text-gray-300'>
+   I am a highly motivated Front-End Web Developer with a solid foundation in HTML, CSS and JavaScript, 
+   recently graduated from a rigorous front-end web development bootcamp with hands-on experience in crafting responsive websites and applications. I am enthusiastic about expanding my knowledge in back-end development and in languages such as PHP, C# and Python. I am eager to contribute my front-end skills and rapidly learn and apply new technologies to create innovative and seamless web solutions for your organisation.
+   </p>
+</div>
+<div className='text 5xl flex justify-center gap-16 py-3 text-grey-300'>
+<AiFillGithub/>
+<AiFillLinkedin/>
+</div>
+<div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden'>
+   <Image src={ola} layout="fill" objectFit="cover"/>
+</div>
+</section>
+<section>
+   <div>
+<h3 className="text-3xl py-1">Services I offer</h3>
+<p className="text-md py-2 leading-8 text-gray-800">I offer variety of services 
+<span className='text-teal-500'>Work</span>that I've done<span className='text-teal-500'></span>
+
+
+
+
+
+</p>
+
+   </div>
 </section>
 </main>
 </div>
