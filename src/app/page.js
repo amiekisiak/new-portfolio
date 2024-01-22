@@ -2,8 +2,16 @@ import Head from 'next/head';
 import {BsFillMoonStarsFill} from 'react-icons/bs';
 import { AiFillLinkedin,AiFillGithub} from 'react-icons/ai';
 import Image from 'next/image';
-import ola from '../../public/picture1.svg';
-
+import ola from '../../public/picture5.svg';
+import comp from '../../public/web1.png';
+import im   from '../../public/web2.png';
+import im2  from '../../public/web3.png';
+import proj1 from '../../public/proj1.png';
+import proj2 from '../../public/proj2.png';
+import proj3 from '../../public/proj3.png';
+import proj4 from '../../public/proj4.png';
+import proj5 from '../../public/proj5.png';
+import proj6 from '../../public/proj6.png';
 
 
 
@@ -16,7 +24,7 @@ return(
    <link rel="icon" href="/favicon.ico"/>
 </Head>
 
-<main>
+<main className='bg-white px-10 md:px-20 lg:px-40'>
 <section className=" bg-sky-700 px-10">
    <nav className="py-10 mb-12 flex justify-between">
 <h1 className="text-xl font-syne">Aleksandra's Portfolio</h1>
@@ -31,14 +39,14 @@ return(
 </ul>
 </nav>
 <div className="text-center p-10 py-10">
-   <h2 className='text-5xl py-2 text-teal-100 font-medium'>Aleksandra Miekisiak</h2>
-   <h3 className='text-2xl py-2'>Developer and Designer.</h3>
-   <p className='text-md py-5 leading-8 text-gray-300'>
+   <h2 className='text-5xl py-2 text-teal-100 font-medium md:text-6xl'>Aleksandra Miekisiak</h2>
+   <h3 className='text-2xl py-2 md:text-3xl'>Developer and Designer.</h3>
+   <p className='text-md py-5 leading-8 text-gray-300 md:text-xl max-w-xl mx-auto'>
    I am a highly motivated Front-End Web Developer with a solid foundation in HTML, CSS and JavaScript, 
    recently graduated from a rigorous front-end web development bootcamp with hands-on experience in crafting responsive websites and applications. I am enthusiastic about expanding my knowledge in back-end development and in languages such as PHP, C# and Python. I am eager to contribute my front-end skills and rapidly learn and apply new technologies to create innovative and seamless web solutions for your organisation.
    </p>
 </div>
-<div className='text 5xl flex justify-center gap-16 py-3 text-grey-300'>
+<div className='text-5xl flex justify-center gap-16 py-3 text-grey-300'>
 <AiFillGithub/>
 <AiFillLinkedin/>
 </div>
@@ -48,17 +56,83 @@ return(
 </section>
 <section>
    <div>
-<h3 className="text-3xl py-1">Services I offer</h3>
-<p className="text-md py-2 leading-8 text-gray-800">I offer variety of services 
-<span className='text-teal-500'>Work</span>that I've done<span className='text-teal-500'></span>
-
-
-
-
-
+<h3 className="text-center text-3xl py-1">Services I offer</h3>
+<p className="text-center text-md py-2 leading-8 text-gray-800">I offer variety of services relating to web development and designing websites. 
+<span className='text-teal-500'></span>Work that I've done icludes designing websites and small projects.<span className='text-teal-500'></span>
 </p>
 
    </div>
+   <div>
+      <div className=' text-center shadow-lg p-10 rounded-xl my-10'>
+<Image src={im} width={100} height={100} />
+<h3 className='text-lg font-medium pt-8 pb-2'>Beautiful Designs</h3>
+<p className='py-2'>
+Creating beautiful designs.
+</p>
+<h4 className='py-4 text-teal-400'>My design tools</h4>
+<p className='text-gray-800 py1'> Photoshop</p>
+<p className='text-gray-800 py1'> Illustrator</p>
+<p className='text-gray-800 py1'> Figma</p>
+      </div>
+
+
+</div>
+<div>
+      <div className=' text-center shadow-lg p-10 rounded-xl my-10'>
+<Image src={comp} width={100} height={100} />
+<h3 className='text-lg font-medium pt-8 pb-2'>Beautiful Designs</h3>
+<p className='py-2'>
+Creating beautiful designs.
+</p>
+<h4 className='py-4 text-teal-400'>My design tools</h4>
+<p className='text-gray-800 py1'> Photoshop</p>
+<p className='text-gray-800 py1'> Illustrator</p>
+<p className='text-gray-800 py1'> Figma</p>
+      </div>
+
+
+
+      <div>
+      <div className=' text-center shadow-lg p-10 rounded-xl my-10'>
+<Image src={im2} width={100} height={100} />
+<h3 className='text-lg font-medium pt-8 pb-2'>Beautiful Designs</h3>
+<p className='py-2'>
+Creating beautiful designs.
+</p>
+<h4 className='py-4 text-teal-400'>My design tools</h4>
+<p className='text-gray-800 py1'> Photoshop</p>
+<p className='text-gray-800 py1'> Illustrator</p>
+<p className='text-gray-800 py1'> Figma</p>
+      </div>
+</div>
+</div>
+</section>
+<section>
+   <div>
+      <h3 className='text-2xl py-2'>Portfolio</h3>
+      <p className='text-md py-5 leading-8 text-gray-900'>
+   I am a highly motivated Front-End Web Developer with a solid foundation in HTML, CSS and JavaScript, 
+   recently graduated from a rigorous front-end web development bootcamp with hands-on experience in crafting responsive websites and applications. I am enthusiastic about expanding my knowledge in back-end development and in languages such as PHP, C# and Python. I am eager to contribute my front-end skills and rapidly learn and apply new technologies to create innovative and seamless web solutions for your organisation.
+   </p>
+</div>
+<div>
+   <Image src={proj1} />
+</div>
+<div>
+   <Image src={proj2} />
+</div>
+<div>
+   <Image src={proj3} />
+</div>
+<div>
+   <Image src={proj4} />
+</div>
+<div>
+   <Image src={proj5} />
+</div>
+<div>
+   <Image src={proj6} />
+</div>
 </section>
 </main>
 </div>
